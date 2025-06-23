@@ -1,0 +1,110 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="../../PulseTrack.Media/logo-no-bg.png">
+    <link rel="stylesheet" href="../../PulseTrack.Styles/Nav.css">
+    <link rel="stylesheet" href="../../PulseTrack.Styles/Footer.css">
+    <link rel="stylesheet" href="About.css">
+    <title>PulseTrack - About</title>
+</head>
+<body>
+    <nav class="nav-section">
+        <img class="nav-logo" src="../../PulseTrack.Media/logo-no-bg.png">
+        <div class="nav-links-container">
+            <span class="nav-link">HOME</span>
+            <span class="nav-link">PULSETRACK</span>
+            <span class="nav-link">LEARNHUB</span>
+            <span class="nav-link">ARCHIVE</span>
+            <span class="nav-link">ABOUT</span>
+        </div>
+        
+        <div class="settings">
+            <div class="settings-line"></div>
+            <div class="settings-line"></div>
+            <div class="settings-line"></div>
+        </div>
+
+        <div class="responsive-nav">
+            <div class="responsive-nav-header">
+                <span class="responsive-span">PulseTrack</span>
+                <i class="responsive-icon fa fa-times"></i>
+            </div>
+            <div class="responsive-nav-links-container">
+                <span class="responsive-nav-link">HOME</span>
+                <span class="responsive-nav-link">PulseTrack</span>
+                <span class="responsive-nav-link">LEARNHUB</span>
+                <span class="responsive-nav-link">ARCHIVE</span>
+                <span class="responsive-nav-link">ABOUT</span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-section">
+        <div class="about-text">
+            <span class="about-title">PulseX: Advancing AI-Powered Healthcare</span>
+            <span class="about-description">
+                PulseX is an advanced intelligent healthcare system that combines Embedded Systems and Artificial Intelligence to provide accurate and accessible cardiovascular screening and monitoring. Developed during the Hack AI Sahti hackathon, PulseX leverages deep learning-based audio classification (using models such as WavLM) alongside patient demographic data (age, gender, region, smoking status) to detect abnormal heart sounds and multiple cardiovascular anomalies in real time. 
+                The core system connects a stethoscope microphone to a Raspberry Pi 4, capturing 20-second heartbeat recordings. These are transformed into Mel-spectrogram features and passed through AI models for binary (normal/abnormal) and multi-label classification. The system supports edge deployment, allowing portable and IoT-based health monitoring without reliance on cloud servers. Advanced noise reduction ensures clean heart sound recordings even in home environments.
+                PulseX integrates a simple yet effective hardware interface: a physical button activates recording, with LED indicators (green for recording, blue for normal results, red for abnormal, yellow for errors) and a buzzer for alerts. The workflow is intuitive — users press the button, the system records, classifies, and provides instant visual/audio feedback. Results can also be displayed in real-time via a custom web interface ("PulseTrack"), inspired by NeuroLink UI concepts, built using HTML, CSS, JavaScript, and Node.js.
+                The web application enables users to view live heartbeat analysis, receive alerts, track their health over time, and review a recording history log (audio and metadata). The LearnHub section offers educational content on cardiovascular health. The system also supports multi-recording and majority-voting to improve diagnostic reliability. Optional extensions (under development) include heart rate monitoring with MAX30102 and body temperature measurement with DS18B20.
+                PulseX's data pipeline is complete: data collection, cleaning, augmentation, model training (binary and multi-label), validation, hardware integration, and web deployment are all done. The system has been tested with real-world hardware components, including KY-037 microphone (with plans to upgrade to Knowles FG-23329-P142), PCF8591 ADC, LEDs, buzzer, buttons, resistors, breadboard, and stethoscope. The total hardware cost remains low (~1547 DH for core components), making PulseX an affordable option for early cardiovascular screening, especially in remote and underserved areas.
+                By bringing together embedded AI, telemedicine capabilities, and user-friendly design, PulseX advances personalized healthcare — making advanced cardiovascular monitoring more accessible to both clinicians and patients worldwide.
+            </span>
+            <div class="about-buttons-container">
+                <span class="about-explore-button">Explore Our Vision</span>
+                <span class="about-paper-button">Read Paper</span>
+            </div>
+        </div>
+
+        <div class="next-projects-text">
+            <span class="next-projects-title">Exploring the Horizon: Pioneering Future Innovations</span>
+            <span class="next-projects-description">
+                Discover the cutting-edge technologies and visionary projects that are shaping the<br>
+                future, from autonomous systems to smart devices. This section highlights the bold<br>
+                innovations that are set to redefine tomorrow.</span>
+        </div>
+        <div class="next-projects-container"></div>
+    </section>
+
+    <footer>
+        <div class="footer-head">
+            <div class="footer-head-content">
+                <span class="footer-head-title">STAY WIRED TO INNOVATION</span>
+                <span class="footer-head-text">
+                    Unlock the future with PulseTrack! Stay ahead 
+                    in technology and innovation—subscribe to 
+                    receive exclusive updates, insights, and 
+                    breakthroughs delivered straight to your inbox.
+                </span>
+            </div>
+            <div class="footer-head-submit">
+                <input class="footer-head-input" type="text" placeholder="Enter your email address" maxlength="50">
+                <button class="footer-head-button">Send</button>
+            </div>
+        </div>
+        <div class="horizental-line"></div>
+        <div class="footer-body">
+            <div class="fssm-container">
+                <img class="fssm-logo" src="../../PulseTrack.Media/fssm-logo-no-bg.png" alt="university-logo">
+                <span class="fssm-text">This project was supervised by the professor <span class="professor">Mohammed Ameksa</span><br>at the faculty of science Semlalia.</span>
+            </div>
+            <div class="PulseTrack-info">
+                <span class="PulseTrack-info-title">Where the Future Begins</span>
+                <div class="info-container">
+                    <span class="footer-body-info" id="Address">Avenue Prince Moulay Abdellah, B.P. 511, Marrakesh, Morocco</span>
+                    <span class="footer-body-info" id="Linkden link">https://www.linkedin.com/in/yassine-bazgour-178b73305/</span>
+                    <span class="footer-body-info" id="Email">yassine.bazgour@gmail.com</span>
+                    <span class="footer-body-info" id="Email">PulseTrack@gmail.com</span>
+                    <span class="footer-body-info" id="Phone number">+212 638 659 880</span>
+                </div>
+                <button class="footer-body-support-btn">Support us</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../PulseTrack.Scripts/Nav.js"></script>
+    <script src="../../PulseTrack.Scripts/Footer.js"></script>
+    <script src="About.js"></script>
+</body>
