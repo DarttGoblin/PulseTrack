@@ -13,27 +13,28 @@ CreateOptions(region, 2)
 CreateOptions(smoke, 3)
 
 form_confirm.onclick = function() {
-    let valid = true;
-    form_select.forEach(select => {
-        if (select.value == 'Choose') {
-            alert('Something is missing...');
-            valid = false;
-            return;
-        }
-    });
+    alert('Error contacting PulseX device.');
+    // let valid = true;
+    // form_select.forEach(select => {
+    //     if (select.value == 'Choose') {
+    //         alert('Something is missing...');
+    //         valid = false;
+    //         return;
+    //     }
+    // });
 
-    if (!valid) return;
+    // if (!valid) return;
 
-    const userData = {
-        age: parseInt(form_select[0].value),
-        gender: form_select[1].value === 'Male' ? 1.0 : 0.0,
-        region: form_select[2].value === 'Urban' ? 1.0 : 0.0,
-        smoker: form_select[3].value === 'I Do' ? 1.0 : 0.0
-    };
+    // const userData = {
+    //     age: parseInt(form_select[0].value),
+    //     gender: form_select[1].value === 'Male' ? 1.0 : 0.0,
+    //     region: form_select[2].value === 'Urban' ? 1.0 : 0.0,
+    //     smoker: form_select[3].value === 'I Do' ? 1.0 : 0.0
+    // };
 
-    console.log('Sending data to device:', userData);
+    // console.log('Sending data to device:', userData);
 
-    SendToDevice(userData);
+    // SendToDevice(userData);
 }
 
 form_clear.onclick = function() {
